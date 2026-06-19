@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://n42g0ddy2344"]
+
+[ext_resource type="PackedScene" uid="uid://7nf4x6f4pgt2" path="res://Models/dungeon_assets/props/torch_mounted.glb" id="1_xygeq"]
+[ext_resource type="Texture2D" uid="uid://d2vrgikh0kwag" path="res://Models/dungeon_assets/dungeon_albedo.png" id="2_ot1jq"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_ssrll"]
+albedo_texture = ExtResource("2_ot1jq")
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1gfsv"]
+radius = 0.2
+height = 0.975
+
+[node name="torch_mounted2" unique_id=316486704 instance=ExtResource("1_xygeq")]
+
+[node name="torch_mounted" parent="." index="0" unique_id=1487094541]
+surface_material_override/0 = SubResource("StandardMaterial3D_ssrll")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="torch_mounted" index="0" unique_id=553428540]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="torch_mounted/StaticBody3D" index="0" unique_id=1474995080]
+transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, 0, 0.20722303, 0.22992675)
+shape = SubResource("CapsuleShape3D_1gfsv")

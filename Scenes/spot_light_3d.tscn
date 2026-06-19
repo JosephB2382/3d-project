@@ -1,0 +1,9 @@
+[gd_scene format=3 uid="uid://qd70f0w1pquc"]
+
+[node name="SpotLight3D" type="SpotLight3D" unique_id=837265862]
+light_color = Color(1, 1, 0.6392157, 1)
+light_energy = 5.594
+light_volumetric_fog_energy = 3.218
+light_size = 0.129
+spot_range = 5.4
+spot_angle = 23.33

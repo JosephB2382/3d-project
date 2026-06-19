@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://cub3w6xlo3xpf"]
+
+[ext_resource type="PackedScene" uid="uid://bn3tsts8h5n81" path="res://Models/dungeon_assets/props/candles.glb" id="1_urfck"]
+[ext_resource type="Texture2D" uid="uid://d2vrgikh0kwag" path="res://Models/dungeon_assets/dungeon_albedo.png" id="2_ebnfa"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_0mged"]
+albedo_texture = ExtResource("2_ebnfa")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_tqlnv"]
+radius = 0.3
+
+[node name="candles" unique_id=1183558778 instance=ExtResource("1_urfck")]
+
+[node name="candle_triple" parent="." index="0" unique_id=1292497036]
+surface_material_override/0 = SubResource("StandardMaterial3D_0mged")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="candle_triple" index="0" unique_id=2055817003]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="candle_triple/StaticBody3D" index="0" unique_id=395002053]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.1, 0.4, 0.010506108)
+shape = SubResource("SphereShape3D_tqlnv")

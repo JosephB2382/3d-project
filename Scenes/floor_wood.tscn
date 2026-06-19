@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://dqrhajdv2sqqc"]
+
+[ext_resource type="PackedScene" uid="uid://c8e133rxj6lqu" path="res://Models/dungeon_assets/building/floor_wood.glb" id="1_2338e"]
+[ext_resource type="Texture2D" uid="uid://d2vrgikh0kwag" path="res://Models/dungeon_assets/dungeon_albedo.png" id="2_0bcok"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_afswu"]
+albedo_texture = ExtResource("2_0bcok")
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aew6e"]
+size = Vector3(4, 0.1, 4)
+
+[node name="floor_wood" unique_id=1497735385 instance=ExtResource("1_2338e")]
+
+[node name="floor_wood_large_dark" parent="." index="0" unique_id=1947052671]
+surface_material_override/0 = SubResource("StandardMaterial3D_afswu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="floor_wood_large_dark" index="0" unique_id=2005201274]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="floor_wood_large_dark/StaticBody3D" index="0" unique_id=297668959]
+shape = SubResource("BoxShape3D_aew6e")

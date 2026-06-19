@@ -1,0 +1,21 @@
+[gd_scene format=3 uid="uid://djfldx4acilwi"]
+
+[ext_resource type="PackedScene" uid="uid://cawxaxhhdj52p" path="res://Models/dungeon_assets/props/coin_stack.glb" id="1_gu3tw"]
+[ext_resource type="Texture2D" uid="uid://d2vrgikh0kwag" path="res://Models/dungeon_assets/dungeon_albedo.png" id="2_26ynd"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_u4pk2"]
+albedo_texture = ExtResource("2_26ynd")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_xenrd"]
+radius = 0.7
+
+[node name="coin_stack" unique_id=2008660350 instance=ExtResource("1_gu3tw")]
+
+[node name="coin_stack_large" parent="." index="0" unique_id=1320645849]
+surface_material_override/0 = SubResource("StandardMaterial3D_u4pk2")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="coin_stack_large" index="0" unique_id=836687074]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="coin_stack_large/StaticBody3D" index="0" unique_id=1685619163]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+shape = SubResource("SphereShape3D_xenrd")

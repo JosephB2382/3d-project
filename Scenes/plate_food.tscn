@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://csh7xorx1ol25"]
+
+[ext_resource type="PackedScene" uid="uid://cyhoo76d581ah" path="res://Models/dungeon_assets/props/plate_food.glb" id="1_1lyuv"]
+[ext_resource type="Texture2D" uid="uid://d2vrgikh0kwag" path="res://Models/dungeon_assets/dungeon_albedo.png" id="2_cti7c"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_okxrs"]
+albedo_texture = ExtResource("2_cti7c")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_8citw"]
+
+[node name="plate_food" unique_id=1137873919 instance=ExtResource("1_1lyuv")]
+
+[node name="plate_food_A" parent="." index="0" unique_id=591631544]
+surface_material_override/0 = SubResource("StandardMaterial3D_okxrs")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="plate_food_A" index="0" unique_id=1725949487]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="plate_food_A/StaticBody3D" index="0" unique_id=674796268]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.3, 0)
+shape = SubResource("SphereShape3D_8citw")
