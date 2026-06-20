@@ -20,3 +20,10 @@ surface_material_override/0 = SubResource("StandardMaterial3D_ssrll")
 [node name="CollisionShape3D" type="CollisionShape3D" parent="torch_mounted/StaticBody3D" index="0" unique_id=1474995080]
 transform = Transform3D(1, 0, 0, 0, 0.9396926, -0.34202012, 0, 0.34202012, 0.9396926, 0, 0.20722303, 0.22992675)
 shape = SubResource("CapsuleShape3D_1gfsv")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="." index="1" unique_id=1075637850]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.7, 0.4)
+light_color = Color(0.8459718, 0.32207432, 0.0098144375, 1)
+light_energy = 10.0
+light_volumetric_fog_energy = 4.802
+omni_range = 0.8
