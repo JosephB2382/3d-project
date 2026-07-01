@@ -3,7 +3,7 @@
 [ext_resource type="PackedScene" uid="uid://bebmokmkirg4h" path="res://Models/dungeon_assets/building/floor_stone.glb" id="1_3k5d3"]
 [ext_resource type="Texture2D" uid="uid://d2vrgikh0kwag" path="res://Models/dungeon_assets/dungeon_albedo.png" id="2_8h0iu"]
 
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_38rnn"]
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8h0iu"]
 albedo_texture = ExtResource("2_8h0iu")
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_8h0iu"]
@@ -12,7 +12,7 @@ size = Vector3(4, 0.1, 4)
 [node name="floor_stone" unique_id=82670230 instance=ExtResource("1_3k5d3")]
 
 [node name="floor_tile_large" parent="." index="0" unique_id=1960693989]
-surface_material_override/0 = SubResource("StandardMaterial3D_38rnn")
+surface_material_override/0 = SubResource("StandardMaterial3D_8h0iu")
 
 [node name="StaticBody3D" type="StaticBody3D" parent="floor_tile_large" index="0" unique_id=862102861]
 

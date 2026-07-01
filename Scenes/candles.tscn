@@ -23,10 +23,10 @@ shape = SubResource("SphereShape3D_tqlnv")
 [node name="OmniLight3D" type="OmniLight3D" parent="." index="1" unique_id=408395555]
 transform = Transform3D(0.9868931, -0.40037143, -0.049654, 0.064439446, 0.9849159, 0.0631489, 0.0037795124, -0.0655209, 0.99780643, 0, 0.7, 0)
 light_color = Color(1, 1, 0.41568628, 1)
-light_energy = 15.0
+light_energy = 0.743
 light_indirect_energy = 0.0
 light_volumetric_fog_energy = 0.0
-omni_range = 0.2
+omni_range = 2.917
 
 [node name="OmniLight3D2" type="OmniLight3D" parent="." index="2" unique_id=1528874740]
 transform = Transform3D(0.9978678, -0.06478252, -0.007945949, 0.06515604, 0.9958743, 0.063159384, 0.0038215423, -0.06354244, 0.99797183, 0.2, 0.9, 0)
